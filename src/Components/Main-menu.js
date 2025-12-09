@@ -41,26 +41,28 @@ const mediaCards = [
 
 export default function ActionAreaCard() {
 
-    const cardsData = [
-        {
-            title: 'Set Your Workout Plan',
-            description: 'Create a workout plan that suits your needs and goals.',
-            image: imgg5,
-            link: '/WorkoutPlan'
-        },
-        {
-            title: 'Diet Plan',
-            description: 'Create a diet plan that suits your needs and goals.',
-            image: imgg6,
-            link: '/DietPlanGenerator'
-        },
-        {
-            title: 'Mental Health',
-            description: 'Mental health is just as important as physical health.',
-            image: imgg7,
-            link: '/MentalHealth'
-        },
-    ];
+const cardsData = [
+    {
+        title: 'Set Your Workout Plan',
+        description: 'Create a workout plan that suits your needs and goals.',
+        image: imgg5,
+        link: '/WorkoutPlan'
+    },
+    {
+        title: 'Diet Plan',
+        description: 'Create a diet plan that suits your needs and goals.',
+        image: imgg6,
+        link: '/DietPlanGenerator'
+    },
+    {
+        title: 'Mental Health & Wellness',
+        description: 'Mental health, sleep are your best friends.',
+        image: imgg7,
+        link: '/MentalHealth'
+    },
+   
+   
+];
 
     const [selectedCard, setSelectedCard] = useState(null);
 
@@ -148,8 +150,8 @@ export default function ActionAreaCard() {
                 </Grid>
             </Container>
 
-
-            <div className="media-box">
+            
+            {/* <div className="media-box">
 
                 <Box sx={{ p: 2, backgroundColor: '#e3f2fd', borderRadius: 2, mb: 5, width: '450px', mt: 5 }}>
                     <Typography variant="h6" gutterBottom sx={{ color: '#3f51b5' }}>
@@ -177,13 +179,13 @@ export default function ActionAreaCard() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             
 
             
 
-            <Box display="flex" flexDirection="column" alignItems="center" >
+            {/* <Box display="flex" flexDirection="column" alignItems="center" >
 
             <Box sx={{ p: 2, backgroundColor: '#f6f9fb', borderRadius: 2, mb: 5, width: '400px', mt: 20 }}>
                     <Typography variant="h6" gutterBottom sx={{ color: '#3f51b5' }}>
@@ -212,7 +214,7 @@ export default function ActionAreaCard() {
                                 color:'blue',
                             }}
                         >
-                            {/* Image Section */}
+                            
                             <CardMedia
                                 component="img"
                                 sx={{
@@ -226,7 +228,7 @@ export default function ActionAreaCard() {
                                 alt={influencer.name}
                             />
 
-                            {/* Description Section */}
+                            
                             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'  }}>
                                 <CardContent sx={{ textAlign: 'left' }}>
                                     <Typography component="div" variant="h6" sx={{ mb: 1 }}>
@@ -261,7 +263,8 @@ export default function ActionAreaCard() {
                         </Card>
                     </Link>
                 ))}
-            </Box>
+            </Box> */}
+            
 
 
         </>

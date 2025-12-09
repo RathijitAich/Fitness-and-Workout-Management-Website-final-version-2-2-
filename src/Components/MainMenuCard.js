@@ -14,7 +14,7 @@ import './MainMenuCard.css'; // Import the CSS file
 const MainMenuCard = ({ title, description, image, link }) => {
     return (
         <Box className="main-menu-card">
-            <Card sx={{ width: 350, height:400, marginBottom: '1rem', borderRadius: '15px', overflow: 'hidden' }}>
+            <Card sx={{ width: 350, height:390, marginBottom: '1rem', borderRadius: '15px', overflow: 'hidden' }}>
                 <CardActionArea component={Link} to={link}>
                     <CardMedia
                         component="img"
